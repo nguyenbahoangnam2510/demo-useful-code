@@ -1,0 +1,398 @@
+.custom-button-category {
+	color:white;
+}
+/* Flex wrap tren mobile */
+
+
+@media only screen and (max-width: 600px) {
+div#filters {
+flex-wrap:wrap;
+}
+	.dsn-border-style .dsn-btn {
+    position: relative;
+    border-width: 1px;
+    padding: 9px 20px 9px;
+}
+	.dsn-form .entry-box input:not([type=submit]) {
+		margin-top:0px
+	}
+	
+	.dns-form .form-group {
+		margin-bottom:0px!important;
+	}
+	
+	.site-header.dsn-hamburger ul.primary-nav li {
+		max-width:250px;
+		margin:auto;
+}
+	.site-header.dsn-hamburger ul.open>li>a>span {
+		border-bottom:1px solid;
+		padding-bottom:5px;
+	}
+	/* Effect banner desktop */
+	.slider-homepage .img-box-parallax.before-z-index.dsn-animate {
+    min-height: 500px;
+}
+
+	.slider-homepage .img-box-parallax.before-z-index.dsn-animate > .cover-bg-img {
+    min-height: 500px!important;
+}
+	/* Giảm size danh mục sản phẩm */
+	.custom-category-label  .dsn-team .team-item-inner .box-img {
+		 max-height: 150px;
+		min-height:100px;
+		cursor:pointer;
+	}
+	.custom-category-label .dsn-grid-layout>.grid-item {
+	margin-top:20px;
+		
+	}
+}
+.custom-category-label .dsn-team .team-item-inner .team-content {
+	text-align:left;
+	backdrop-filter: unset;
+	border:none;
+	padding:10px;
+}
+
+
+.devvn_toolbar .bi-bag-plus-fill::before {
+    margin-top: 6px;
+}
+
+.devvn_toolbar .bi-calendar-check-fill::before {
+    margin-top: 6px;
+}
+
+/* Đưa slider vào giữa */
+.slider-homepage .swiper-container {position:relative}
+.slider-homepage .dsn-swiper-paginate {
+	position:absolute;
+	top:0px;
+	z-index:2
+}
+/* Site menu header */
+#site_menu_header {
+	border-bottom:2px solid 
+}
+.dsn-socials li a i {
+	font-size:30px!important;
+}
+.dsn-socials li a {
+	width:60px;
+	height:60px;
+}
+/* Thay đổi thành font chữ in hoa */
+@media only screen and (max-width: 600px) {
+.site-header.dsn-hamburger ul.open>li>a>span {
+	text-transform:uppercase
+}
+}
+/*css lai phan filtering */
+.filtering button {
+	color: var(--heading-color);
+	    width: auto;
+    margin-right: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.filtering button.is-checked {
+    color: var(--theme-color);
+}
+.filtering button:not(:last-of-type):after {
+    content: "/";
+    margin: 0 2px;
+    color: var(--heading-color);
+}
+/* Fix logo header */
+#site_menu_header {
+	background: rgba(0,0,0,.6)
+}
+
+/*Add preloader */
+/* Preloader */
+.text-center{
+    text-align: center;
+}
+.ctn-preloader {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.ctn-preloader .animation-preloader {
+  position: absolute;
+  z-index: 100;
+}
+
+/* Spinner cargando */
+.ctn-preloader .animation-preloader .spinner {
+  -webkit-animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite linear;
+  border-radius: 50%;
+  border: 3px solid rgba(215, 34, 3, .2);
+  border-top-color: #d72203;
+  /* No se identa por orden alfabetico para que no lo sobre-escriba */
+  height: 9em;
+  margin: 0 auto 3.5em auto;
+  width: 9em;
+}
+
+/* Texto cargando */
+.ctn-preloader .animation-preloader .txt-loading {
+  font: bold 4em "Montserrat", sans-serif;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading:before {
+  -webkit-animation: letters-loading 4s infinite;
+  animation: letters-loading 4s infinite;
+  color: white;
+  content: attr(data-text-preloader);
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: rotateY(-90deg);
+  transform: rotateY(-90deg);
+}
+
+.ctn-preloader .animation-preloader .txt-loading .letters-loading {
+  color: rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(2):before {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(3):before {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(4):before {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(5):before {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(6):before {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(7):before {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.ctn-preloader
+.animation-preloader
+.txt-loading
+.letters-loading:nth-child(8):before {
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+
+.ctn-preloader .loader-section {
+  background-color: rgba(0, 0, 0, .95);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.ctn-preloader .loader-section.section-left {
+  left: 0;
+}
+
+.ctn-preloader .loader-section.section-right {
+  right: 0;
+}
+
+/* Efecto de fade en la animación de cargando */
+.loaded .animation-preloader {
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/* Efecto de cortina */
+.loaded .loader-section.section-left {
+  -webkit-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  transform: translateX(-101%);
+  -webkit-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  -o-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+.loaded .loader-section.section-right {
+  -webkit-transform: translateX(101%);
+  -ms-transform: translateX(101%);
+  transform: translateX(101%);
+  -webkit-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  -o-transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1);
+}
+
+/* Animación del preloader */
+@-webkit-keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+/* Animación de las letras cargando del preloader */
+@-webkit-keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes letters-loading {
+  0%,
+  75%,
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+
+/* Tamaño de portatil hacia atras (portatil, tablet, celular) */
+@media screen and (max-width: 767px) {
+  /* Preloader */
+  /* Spinner cargando */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 8em;
+    width: 8em;
+  }
+  /* Texto cargando */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 4em "Montserrat", sans-serif;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Prelaoder */
+  /* Spinner cargando */
+  .ctn-preloader .animation-preloader .spinner {
+    height: 7em;
+    width: 7em;
+  }
+  /* Texto cargando */
+  .ctn-preloader .animation-preloader .txt-loading {
+    font: bold 3em "Montserrat", sans-serif;
+  }
+	/*Fix menu */
+	.site-header.dsn-hamburger ul.open>li>a>span {
+    font-size:24px;
+}
+}
+/*Fix cusor ở trang chủ phần đôi nét về chúng tôi */
+/*Fix phần menu header */
+@media only screen and (min-width: 992px) {
+	.site-header:not(.dsn-hamburger) ul.primary-nav>li {
+		text-transform:uppercase;
+		font-size:16px;
+	}
+	/*Customize lại phần caption */
+	.cap {
+		top:50%;
+		left:10%;
+		bottom:unset;
+	}
+	.cap span {
+		font-size:30px;
+	}
+}
+
+/* fix lại phần Form */
+.dsn-form .entry-box input:not([type=submit]), .dsn-form .entry-box textarea  {
+	background:white;
+	color:black;
+	font-weight:400;
+	font-family:'Roboto'
+}
+.dsn-form .entry-box input:not([type=submit])::placeholder, .dsn-form .entry-box textarea::placeholder {
+	color:black;
+}
+/*Bỏ hiệu ứng căn lệch từ phần dự án */
+.line-shape:not(.line-shape-before):after {
+    content: none;;
+}
+/* Nới rộng khoảng cách của Social Media */
+.dsn-socials li a {
+    margin-right: 20px;
+}

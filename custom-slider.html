@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/js/splide.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.9/dist/css/splide.min.css">
+<div id="card-slider" class="card-slider splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide" data-splide-interval="2000">
+                [SHORTCODE_ELEMENTOR id="6682"]
+            </li>
+            <li class="splide__slide" data-splide-interval="2000">
+                [SHORTCODE_ELEMENTOR id="6677"]
+            </li>
+            <li class="splide__slide" data-splide-interval="2000">
+                [SHORTCODE_ELEMENTOR id="6654"]
+            </li>
+        </ul>
+    </div>
+</div>
+<script>document.addEventListener('DOMContentLoaded', function () {
+        new Splide('.card-slider', {
+            perPage: 1,
+            gap: '1em',
+            autoplay: true,
+            classes: {
+                pagination: 'splide__pagination your-class-pagination',
+                page: 'splide__pagination__page your-class-page',
+            },
+        }).mount();
+    });</script>

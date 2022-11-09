@@ -1,0 +1,84 @@
+<style>
+    .floating-buttons {
+    position: fixed;
+    /* width: 60px; */
+    /* height: 60px; */
+    width: auto;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #000 0.3;
+    z-index: 20!important;
+}
+.floating-buttons a.shopping-online {
+    background: #292929;
+}
+.floating-buttons a.shopping-online img {
+    margin-top: -1px;
+}
+
+.floating-buttons a img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.floating-buttons a.shopping-online {
+    background: #292929;
+    display:flex;
+}
+.floating-buttons a.contact-us {
+    margin-top: 0.625rem;
+    display:flex;
+}
+.floating-buttons a {
+    background: #000;
+    transition: all 0.5s ease-out;
+    padding: 1rem 2rem;
+    display: block;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    /* text-decoration: none; */
+    text-transform: uppercase;
+    text-align: left;
+    border: 1px solid #fff;
+}
+.floating-buttons a span {
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+.floating-buttons {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.floating-buttons a.shopping-online {
+    float: right;
+    width: 50%;
+}
+.floating-buttons a.shopping-online img {
+    margin-top: -1px;
+    width: 13px;
+}
+.floating-buttons a.contact-us {
+    float: left;
+    width: 50%;
+    margin-top: 0;
+}
+.floating-buttons a {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.825rem;
+}
+}
+</style>
+<div class="floating-buttons">
+    <a href="https://goldenvietnam.vn/product/" class="shopping-online"><img
+            src="https://thaicong.com/wp-content/themes/thaicong/assets/images/icon/shop.svg" width="12"
+            alt=""><span>Mua sắm online</span></a>
+    <a href="https://goldenvietnam.vn/#lien-he" class="contact-us"><img
+            src="https://thaicong.com/wp-content/themes/thaicong/assets/images/icon/booking.svg" width="12"
+            alt=""><span>Đặt lịch thiết kế</span></a>
+</div>
